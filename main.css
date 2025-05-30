@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    max-width: 200px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00966E;
+}
+
+/* Accessibility: Skip link */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+.skip-link:focus {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 999;
+    padding: 10px;
+    background-color: #00966E;
+    color: white;
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+    background-color: #ffffff; /* White background */
+}
+
+#neuralNetworkCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #00000005;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #000; /* Ensure text is visible */
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-accent {
+    color: #B22222; /* Adjusted for better contrast, slightly darker red */
+    font-weight: 400;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #00805c; /* Adjusted for better contrast, darker green */
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #006649; /* Darker hover state */
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #000;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #00805c; /* Adjusted for better contrast */
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon::before {
+    content: "◆";
+    color: white;
+    font-size: 24px;
+}
+
+.feature:nth-child(2) .feature-icon {
+    background-color: #B22222; /* Adjusted for better contrast */
+}
+
+.feature:nth-child(2) .feature-icon::before {
+    content: "●";
+}
+
+.feature:nth-child(3) .feature-icon::before {
+    content: "▲";
+}
+
+.feature h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.feature p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.location {
+    background-color: #f8f9fa;
+}
+
+.location-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.location-text h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.location-highlight {
+    color: #B22222; /* Adjusted for better contrast */
+    font-weight: 400;
+}
+
+.location-text p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.location-text a {
+    text-decoration: none;
+    color: #000;
+}
+
+.location-map {
+    background-color: #e0e0e0;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.location-map #map {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #00805c; /* Adjusted for better contrast */
+}
+
+.footer-section p, .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-section a:hover {
+    color: #00805c; /* Adjusted for better contrast */
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .location-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 40px;
+        max-width: 180px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 35px;
+        max-width: 160px;
+    }
+
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+}
+.language-switcher a {
+    text-decoration: none;
+    color: inherit;
+}
