@@ -383,11 +383,20 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
 window.addEventListener('load', () => {
     resizeCanvas();
-    animate();
+    if (reducedMotion.matches) {
+        drawSoCPattern();
+    } else {
+        animate();
+    }
 });
 
 window.addEventListener('resize', () => {
     resizeCanvas();
+    if (reducedMotion.matches) {
+        drawSoCPattern();
+    }
 });

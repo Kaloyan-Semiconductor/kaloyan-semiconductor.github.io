@@ -8,10 +8,54 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="manifest" href="/images/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#00805c"> <meta name="msapplication-TileColor" content="#00805c"> <meta name="theme-color" content="#ffffff">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#00805c">
+    <meta name="msapplication-TileColor" content="#00805c">
+    <meta name="theme-color" content="#ffffff">
     <meta name="description" content="Kaloyan Semiconductor offers expert ASIC/FPGA design, functional verification, and embedded software engineering resources based in Ruse, Bulgaria. Specializing in advanced nodes, AI/ML accelerators, and edge AI for global semiconductor projects.">
     <meta name="keywords" content="ASIC design, FPGA design, functional verification, embedded software, edge AI, semiconductor engineering, Ruse, Bulgaria, nearshore, custom silicon, ML accelerators, UVM, SystemVerilog, hardware prototyping">
+    <link rel="canonical" href="https://kaloyansemi.com/">
+    <link rel="alternate" hreflang="en" href="https://kaloyansemi.com/">
+    <link rel="alternate" hreflang="bg" href="https://kaloyansemi.com/bg/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kaloyan Semiconductor">
+    <meta property="og:title" content="Kaloyan Semiconductor — Expert ASIC/FPGA Design & Verification">
+    <meta property="og:description" content="European semiconductor engineering teams for analog, digital, layout, verification, RF, FPGA, embedded, and PCB. Based in Ruse, Bulgaria.">
+    <meta property="og:url" content="https://kaloyansemi.com/">
+    <meta property="og:image" content="https://kaloyansemi.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="The tower of Cherven fortress near Ruse, Bulgaria — the landmark in the Kaloyan Semiconductor logo.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="bg_BG">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kaloyan Semiconductor — Expert ASIC/FPGA Design & Verification">
+    <meta name="twitter:description" content="European semiconductor engineering teams for analog, digital, layout, verification, RF, FPGA, embedded, and PCB. Based in Ruse, Bulgaria.">
+    <meta name="twitter:image" content="https://kaloyansemi.com/images/og-image.jpg">
+    <meta name="twitter:image:alt" content="The tower of Cherven fortress near Ruse, Bulgaria.">
+
     <link rel="stylesheet" href="/main.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Kaloyan Semiconductor",
+      "legalName": "Kaloyan Semiconductor EOOD",
+      "url": "https://kaloyansemi.com",
+      "logo": "https://kaloyansemi.com/images/logo.png",
+      "email": "info@kaloyansemi.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5 Pirot Street",
+        "addressLocality": "Ruse",
+        "addressCountry": "BG"
+      },
+      "vatID": "BG208337078",
+      "taxID": "208337078",
+      "areaServed": "Europe"
+    }
+    </script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -19,7 +63,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/images/logo.png" alt="Kaloyan Semiconductor Company Logo" />
+                    <img src="/images/logo.png" alt="Kaloyan Semiconductor" />
                 </div>
                 <nav>
                     <ul>
@@ -30,20 +74,19 @@
                     </ul>
                 </nav>
 
-                <div class="language-switcher">
-                    <span title="English">🇬🇧</span>
-                    <a href="/bg" title="Български">🇧🇬</a>
-
+                <div class="language-switcher" aria-label="Language">
+                    <span aria-current="true">EN</span>
+                    <a href="/bg/" lang="bg">BG</a>
                 </div>
             </div>
         </div>
     </header>
 
     <section class="hero" id="home">
-        <canvas id="neuralNetworkCanvas" aria-hidden="true" role="presentation"></canvas>
+        <canvas id="neuralNetworkCanvas" aria-hidden="true"></canvas>
         <div class="container hero-content" id="main-content">
-            <h1>Expert Engineering <span class="hero-accent">Resources</span></h1>
-            <p>Expert teams for Analog Design, Analog Layout, DFT, Physical Design, Digital Design, Verification, RF, ATE, Embedded Software, FPGA, and PCB—delivering complete semiconductor engineering solutions.</p>
+            <h1>Expert Teams for <span class="hero-accent">Semiconductor Engineering</span></h1>
+            <p>Analog, digital, layout, verification, RF, FPGA, embedded, and PCB&mdash;an end-to-end engineering bench for European silicon projects.</p>
             <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
     </section>
@@ -52,77 +95,93 @@
         <div class="container">
             <h2 class="section-title">Our Expertise</h2>
             <div class="features">
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>Analog Design</h3>
-                    <p>Our analog design team delivers high-performance circuits including PMICs, PLLs, ADCs/DACs, and SerDes. From architecture to transistor-level design and simulation, we ensure robust analog IP integration and performance.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>Analog Layout</h3>
-                    <p>Our analog layout engineers deliver precision layout for analog, mixed-signal, and RF ICs. Expertise includes low-noise amplifiers, data converters, power management, and custom analog blocks for demanding applications.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>DFT</h3>
-                    <p>We implement robust Design-for-Test strategies including Scan, ATPG, MBIST, and LBIST. Our DFT engineers optimize for test coverage and yield while minimizing area and power overhead.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>Physical Design</h3>
-                    <p>Our physical design engineers specialize in place & route, timing closure, and signoff for advanced process nodes. We ensure manufacturability, power efficiency, and robust silicon performance for complex SoCs and custom ASICs.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>Digital Design</h3>
-                    <p>We provide Digital Design engineers skilled in RTL design, microarchitecture, SoC integration, and low-power implementation. Our teams support advanced nodes (7nm and below) and specialize in integrating ML accelerators, high-speed interfaces, and custom compute blocks into production silicon.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>Verification</h3>
-                    <p>We offer comprehensive expertise in SystemVerilog, e (Specman), UVM, and Portable Stimulus (PSS), along with formal verification and coverage-driven methodology. Our teams validate AI/ML subsystems, custom memory hierarchies, interconnects, and complex SoCs from block to system level.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>RF</h3>
-                    <p>Our RF engineers design and verify high-frequency circuits for wireless communication, radar, and sensing applications. We specialize in mmWave front-ends, PA/LNA design, frequency synthesizers, and RFIC layout, ensuring optimal performance in challenging electromagnetic environments.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>ATE</h3>
-                    <p>We provide Automated Test Equipment (ATE) engineering services for production test development. Our experts develop test programs for digital, analog, and mixed-signal devices on major tester platforms (Teradyne, Advantest), optimizing test time and ensuring zero-defect delivery.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>Embedded Software & Edge AI</h3>
-                    <p>We support embedded development across C/C++, Linux, RTOS, and bare-metal environments. Our engineers have deep expertise in compiler toolchains, NPU firmware, DMA orchestration, and ML inference frameworks (TFLite, TVM, ONNX), enabling real-time edge AI on custom silicon platforms.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>FPGA & Prototyping</h3>
-                    <p>Our FPGA engineers develop and validate complex designs across major platforms (Xilinx, Intel, Lattice). Capabilities include hardware prototyping of AI inference pipelines, HLS-based acceleration, board bring-up, and pre-silicon validation using emulation and hybrid simulation flows.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>FPGA DevOps</h3>
-                    <p>We implement FPGA DevOps pipelines for automated build, test, and deployment of FPGA designs. Our solutions integrate CI/CD, version control, simulation, synthesis, and hardware validation to accelerate development cycles and ensure reproducibility.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"></div>
-                    <h3>PCB</h3>
-                    <p>We offer PCB design and layout services for high-speed digital, mixed-signal, and RF boards. Our team handles schematic capture, signal integrity, power delivery, and manufacturing support for prototypes and production runs.</p>
-                </div>
-            </div>
+
+                <article class="feature">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 16 Q 8 4, 14 16 T 26 16 L 30 16"/>
+                        </svg>
+                    </div>
+                    <h3>Analog, RF &amp; Layout</h3>
+                    <p>High-performance analog, mixed-signal, and RF design from architecture to silicon&mdash;PMICs, PLLs, ADCs/DACs, SerDes, mmWave front-ends&mdash;paired with precision custom layout.</p>
+                    <ul class="feature-tags">
+                        <li>Analog Design</li>
+                        <li>Analog Layout</li>
+                        <li>RF</li>
+                    </ul>
+                </article>
+
+                <article class="feature">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="14" height="14" rx="1"/>
+                            <path d="M13 9V5 M19 9V5 M13 27v-4 M19 27v-4 M5 13H9 M5 19H9 M27 13h-4 M27 19h-4"/>
+                        </svg>
+                    </div>
+                    <h3>Digital &amp; Physical Design</h3>
+                    <p>RTL through signoff for advanced nodes (7&nbsp;nm and below)&mdash;microarchitecture, SoC integration, place &amp; route, timing closure, and low-power implementation for ML accelerators and high-speed interfaces.</p>
+                    <ul class="feature-tags">
+                        <li>Digital Design</li>
+                        <li>Physical Design</li>
+                    </ul>
+                </article>
+
+                <article class="feature">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 17l5 5 11-13"/>
+                            <rect x="3" y="3" width="26" height="26" rx="2" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <h3>Verification, DFT &amp; Test</h3>
+                    <p>SystemVerilog, e, UVM, PSS, and formal verification across block to system level&mdash;plus Scan/ATPG/MBIST DFT and production test programs on Teradyne and Advantest platforms.</p>
+                    <ul class="feature-tags">
+                        <li>Functional Verification</li>
+                        <li>DFT</li>
+                        <li>ATE</li>
+                    </ul>
+                </article>
+
+                <article class="feature">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="8" width="24" height="16" rx="1"/>
+                            <circle cx="10" cy="16" r="1.5" fill="currentColor"/>
+                            <circle cx="16" cy="16" r="1.5" fill="currentColor"/>
+                            <circle cx="22" cy="16" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>FPGA, Embedded &amp; PCB</h3>
+                    <p>Hardware prototyping and pre-silicon validation on Xilinx, Intel, and Lattice&mdash;with C/C++, Linux, RTOS, NPU firmware, ML inference (TFLite, TVM, ONNX), high-speed PCB layout, and CI/CD for FPGA flows.</p>
+                    <ul class="feature-tags">
+                        <li>FPGA &amp; Prototyping</li>
+                        <li>FPGA DevOps</li>
+                        <li>Embedded Software &amp; Edge AI</li>
+                        <li>PCB Design</li>
+                    </ul>
+                </article>
+
             </div>
         </div>
     </section>
 
     <section class="section location" id="about">
         <div class="container">
+            <div class="heritage-band">
+                <figure class="heritage-image">
+                    <img src="/images/cherven-tower.jpg" alt="The medieval tower of Cherven fortress, standing on a hilltop above the Cherni Lom gorge near Ruse." width="1600" height="1200" loading="lazy">
+                    <figcaption>Cherven fortress, near Ruse &mdash; the tower in our logo. Photo: Trygve W Nodeland, <a href="https://commons.wikimedia.org/wiki/File:Tower_stronghold_of_Cherven_(Bulgaria).JPG" rel="license noopener">CC BY-SA 3.0</a>.</figcaption>
+                </figure>
+                <div class="heritage-text">
+                    <h2>Engineering, <span class="location-highlight">built to last</span></h2>
+                    <p>Our name honours Tsar Kaloyan, ruler of the Second Bulgarian Empire in the early 13th century. The fortress of Cherven &mdash; near Ruse, one of his great strongholds &mdash; sits in our logo beside a silicon die. Eight hundred years apart, both are European engineering held to a single standard: precision, durability, first-pass success.</p>
+                    <p>That's the standard our teams bring to every project &mdash; analog, digital, layout, verification, RF, FPGA, embedded &mdash; for clients building silicon that has to work, ship, and last.</p>
+                </div>
+            </div>
             <div class="location-content">
                 <div class="location-text">
                     <h2>Based in <span class="location-highlight">Ruse, Bulgaria</span></h2>
-                    <p>Based in Ruse, Bulgaria—at the crossroads of Central and Eastern Europe—we harness the region's 70-year legacy in computing and semiconductors, along with a highly skilled engineering workforce from both Bulgaria and neighboring Romania.</p>
+                    <p>Based in Ruse, Bulgaria&mdash;at the crossroads of Central and Eastern Europe&mdash;we harness the region's 70-year legacy in computing and semiconductors, along with a highly skilled engineering workforce from both Bulgaria and neighboring Romania.</p>
                     <p>Our strategic location enables smooth, nearshore collaboration with European Blue Chip companies and agile startups alike, while maintaining cost-efficiency and operational flexibility.</p>
                     <p>We are committed to delivering world-class semiconductor solutions with the precision, reliability, and quality expected from a European engineering partner.</p>
                 </div>
@@ -144,24 +203,16 @@
                 </div>
                 <div class="footer-section">
                     <h3>Engineering Services</h3>
-                    <p><a href="#services">Analog Design Engineers</a></p>
-                    <p><a href="#services">Analog Layout Engineers</a></p>
-                    <p><a href="#services">DFT Engineers</a></p>
-                    <p><a href="#services">Physical Design Engineers</a></p>
-                    <p><a href="#services">Digital Design Engineers</a></p>
-                    <p><a href="#services">Verification Engineers</a></p>
-                    <p><a href="#services">RF Engineers</a></p>
-                    <p><a href="#services">ATE Engineers</a></p>
-                    <p><a href="#services">Embedded Software Engineers</a></p>
-                    <p><a href="#services">FPGA Engineers</a></p>
-                    <p><a href="#services">FPGA DevOps Specialists</a></p>
-                    <p><a href="#services">PCB Designers</a></p>
+                    <p><a href="#services">Analog, RF &amp; Layout</a></p>
+                    <p><a href="#services">Digital &amp; Physical Design</a></p>
+                    <p><a href="#services">Verification, DFT &amp; Test</a></p>
+                    <p><a href="#services">FPGA, Embedded &amp; PCB</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Company</h3>
                     <p><a href="#about">About Us</a></p>
-                    <p><a href="#contact">Careers</a></p>
-                    <p><a href="#contact">Partners</a></p>
+                    <p><a href="mailto:info@kaloyansemi.com?subject=Careers">Careers</a></p>
+                    <p><a href="mailto:info@kaloyansemi.com?subject=Partnership%20enquiry">Partners</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
